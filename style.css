@@ -1,7 +1,62 @@
-body{
-    background-color: black;
+body {
+background-color: rgb(0, 0, 0);
 }
 
 .logoimg{
-    width: 50px;
+    width: 650px;
 }
+
+.navbar-toggle {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1050;
+    background-color: #000000;
+    box-shadow:  2px 2px 22px rgb(255, 255, 255);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar-toggle:hover {
+    background-color: #3a3a3a;
+  }
+
+  .vertical-nav {
+    position: fixed;
+    top: 3.5rem; /* below the menu button */
+    left: 1rem;
+    width: 200px;
+    background-color: #000000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  .vertical-nav.show {
+    max-height: 500px; /* adjust as needed */
+    opacity: 1;
+  }
+
+  .vertical-nav a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 1px solid white;
+  }
+
+  .vertical-nav a:hover {
+    background-color: #292929;
+  }
+
+  @media (max-width: 576px) {
+    .vertical-nav {
+      width: 90%;
+      left: 1rem;
+    }
+  }
