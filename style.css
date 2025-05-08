@@ -1,62 +1,157 @@
 body {
-background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
 }
 
-.logoimg{
-    width: 650px;
+.logoimg {
+  width: 650px;
 }
 
 .navbar-toggle {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    z-index: 1050;
-    background-color: #000000;
-    box-shadow:  2px 2px 22px rgb(255, 255, 255);
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease;
-  }
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1050;
+  background-color: #000000;
+  box-shadow: 2px 2px 22px rgb(255, 255, 255);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
 
-  .navbar-toggle:hover {
-    background-color: #3a3a3a;
-  }
+.navbar-toggle:hover {
+  background-color: #3a3a3a;
+}
 
+.vertical-nav {
+  position: fixed;
+  top: 3.5rem;
+  /* below the menu button */
+  left: 1rem;
+  width: 200px;
+  background-color: #000000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.vertical-nav.show {
+  max-height: 500px;
+  /* adjust as needed */
+  opacity: 1;
+}
+
+.vertical-nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid white;
+}
+
+.vertical-nav a:hover {
+  background-color: #292929;
+}
+
+@media (max-width: 576px) {
   .vertical-nav {
-    position: fixed;
-    top: 3.5rem; /* below the menu button */
+    width: 90%;
     left: 1rem;
-    width: 200px;
-    background-color: #000000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.4s ease, opacity 0.3s ease;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.fadetextcontainer {
+  margin-top: -150px;
+  margin-bottom: 100px;
+}
+
+.downarrow {
+  width: 30px;
+}
+
+.name-section {
+  background-color: #333333;
+  min-height: 100vh;
+}
+
+.rotating-words span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: rotateFade 9s infinite;
+}
+
+.rotating-words span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.rotating-words span:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.rotating-words span:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes rotateFade {
+  0% {
     opacity: 0;
   }
 
-  .vertical-nav.show {
-    max-height: 500px; /* adjust as needed */
+  10% {
     opacity: 1;
   }
 
-  .vertical-nav a {
-    display: block;
-    padding: 0.75rem 1rem;
-    color: #ffffff;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    border: 1px solid white;
+  30% {
+    opacity: 1;
   }
 
-  .vertical-nav a:hover {
-    background-color: #292929;
+  40% {
+    opacity: 0;
   }
 
-  @media (max-width: 576px) {
-    .vertical-nav {
-      width: 90%;
-      left: 1rem;
-    }
+  100% {
+    opacity: 0;
   }
+}
+
+h1{
+  font-size: 9rem;;
+}
+
+span{
+  font-size: 65px;
+}
