@@ -102,7 +102,7 @@ body {
 }
 
 .name-section {
-  background-color: #333333;
+  background-color: #181818;
   min-height: 100vh;
 }
 
@@ -127,31 +127,54 @@ body {
 }
 
 @keyframes rotateFade {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 1;
-  }
-
-  30% {
-    opacity: 1;
-  }
-
-  40% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
-h1{
-  font-size: 9rem;;
+.firstnameh1, .lastnameh1 {
+  font-size: 9rem;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 15px;
 }
 
-span{
-  font-size: 65px;
+.lastnameh1 {
+  margin-top: 90px;
+}
+
+span {
+  margin-top: -30px;
+  font-family: "subway-new-york-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 500px;
+  letter-spacing: 5px;
+}
+
+.graphicclass, .webclass, .artistclass {
+  font-size: 7rem;
+}
+
+.graphicclass, .webclass {
+  width: 1500px;
+}
+
+.artistclass {
+  width: 800px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 8px;
+  }
+
+  .graphicclass, .webclass, .artistclass {
+    font-size: 2.5rem;
+    width: 90vw;
+  }
 }
