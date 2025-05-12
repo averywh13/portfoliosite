@@ -127,14 +127,29 @@ body {
 }
 
 @keyframes rotateFade {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  30% { opacity: 1; }
-  40% { opacity: 0; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
-.firstnameh1, .lastnameh1 {
+.firstnameh1,
+.lastnameh1 {
   font-size: 9rem;
   font-family: "Pirata One", system-ui;
   font-weight: 400;
@@ -155,11 +170,14 @@ span {
   letter-spacing: 5px;
 }
 
-.graphicclass, .webclass, .artistclass {
+.graphicclass,
+.webclass,
+.artistclass {
   font-size: 7rem;
 }
 
-.graphicclass, .webclass {
+.graphicclass,
+.webclass {
   width: 1500px;
 }
 
@@ -173,8 +191,52 @@ span {
     letter-spacing: 8px;
   }
 
-  .graphicclass, .webclass, .artistclass {
+  .graphicclass,
+  .webclass,
+  .artistclass {
     font-size: 2.5rem;
     width: 90vw;
   }
+}
+
+.about-section {
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+.headshotpic {
+  width: 650px;
+}
+
+.skills-section {
+  background-color: #181818;
+  min-height: 100vh;
+}
+
+.skill-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.skills-title {
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 6rem;
+
+}
+
+.skills-title::after {
+  content: '';
+  display: block;
+  width: 1000px;
+  height: 4px;
+  background-color: #00e676;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+.skill-section{
+  padding-top: 150px;
 }
