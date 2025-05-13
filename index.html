@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="/style.css">
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- FONTS -->
     <script>
@@ -101,56 +103,207 @@
     <!-- third section -->
     <!-- fourth section -->
     <div class="skills-section">
-  <div class="container text-center text-white skill-section">
-    <h2 class="skills-title text-center">SKILLS</h2>
-    <div class="row g-5 ">
-      <div class="col-md-3">
-        <img src="images/htmllogo.png" alt="HTML5" class="skill-icon">
-        <h5>HTML</h5>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
-      <div class="col-md-3">
-        <img src="images/csslogo.png" alt="CSS3" class="skill-icon">
-        <h5>CSS</h5>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
-      <div class="col-md-3">
-        <img src="images/bootstraplogo.png" alt="JavaScript" class="skill-icon">
-        <h5>BOOTSTRAP</h5>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
-      <div class="col-md-3">
-        <img src="images/javascriptlogo.png" alt="Python" class="skill-icon">
-        <h5>JAVASCRIPT</h5>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
-      <div class="col-md-3">
-        <img src="images/vuelogo.png" alt="Sass" class="skill-icon">
-        <h5>VUE</h5>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
-      <div class="col-md-3">
-        <img src="images/adobeill.png" alt="MySQL" class="skill-icon">
-        <h5>ADOBE ILLUSTRATOR</h5>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
-        <div class="col-md-3">
-        <img src="images/adobephoto.png" alt="MySQL" class="skill-icon">
-        <h5>ADOBE PHOTOSHOP</h5>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
-        <div class="col-md-3">
-        <img src="images/procreate.png" alt="MySQL" class="skill-icon">
-        <h5>PROCREATE</h5>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
+        <div class="container text-center text-white skill-section">
+            <h2 class="skills-title text-center">SKILLS</h2>
+            <div class="row g-5 ">
+                <div class="col-md-3">
+                    <img src="images/htmllogo.png" alt="HTML5" class="skill-icon">
+                    <h5>HTML</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/csslogo.png" alt="CSS3" class="skill-icon">
+                    <h5>CSS</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/bootstraplogo.png" alt="JavaScript" class="skill-icon">
+                    <h5>BOOTSTRAP</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/javascriptlogo.png" alt="Python" class="skill-icon">
+                    <h5>JAVASCRIPT</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/vuelogo.png" alt="Sass" class="skill-icon">
+                    <h5>VUE</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/adobeill.png" alt="MySQL" class="skill-icon">
+                    <h5>ADOBE ILLUSTRATOR</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/adobephoto.png" alt="MySQL" class="skill-icon">
+                    <h5>ADOBE PHOTOSHOP</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/procreate.png" alt="MySQL" class="skill-icon">
+                    <h5>PROCREATE</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
     <!-- fourth section -->
-     <!-- fifth section -->
 
     <!-- fifth section -->
+    <!-- Top Header -->
+    <h2 class="works-title text-center">WORKS</h2>
+    <div class="top-bar text-white">
+        <div class="text-white">
+            <span class="works-header">01</span>
+            <span class="works-header">WORKS TITLE</span>
+            <span class="works-header">2023</span>
+        </div>
+        <div class="text-white">
+            <a href="">
+                <span class="works-header">+ More Info</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Carousel Section -->
+    <div class="main-carousel" data-flickity='{
+    "wrapAround": true,
+    "autoPlay": false,
+    "pageDots": false,
+    "prevNextButtons": false,
+    "freeScroll": true,
+    "contain": true
+  }'>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+1" alt="Image 1">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+2" alt="Image 2">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+3" alt="Image 3">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+4" alt="Image 4">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+5" alt="Image 5">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+6" alt="Image 6">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+7" alt="Image 7">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+8" alt="Image 8">
+        </div>
+    </div>
+    <!-- fifth section -->
+
+    <!-- sixth section -->
+    <!-- Top Header -->
+    <div class="top-bar text-white">
+        <div class="text-white">
+            <span class="works-header">02</span>
+            <span class="works-header">WORKS TITLE</span>
+            <span class="works-header">2024</span>
+        </div>
+        <div class="text-white">
+            <a href="">
+                <span class="works-header">+ More Info</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Carousel Section -->
+    <div class="main-carousel" data-flickity='{
+    "wrapAround": true,
+    "autoPlay": false,
+    "pageDots": false,
+    "prevNextButtons": false,
+    "freeScroll": true,
+    "contain": true
+  }'>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+1" alt="Image 1">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+2" alt="Image 2">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+3" alt="Image 3">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+4" alt="Image 4">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+5" alt="Image 5">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+6" alt="Image 6">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+7" alt="Image 7">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+8" alt="Image 8">
+        </div>
+    </div>
+    <!-- sixth section -->
+
+    <!-- seventh section -->
+    <!-- Top Header -->
+    <div class="top-bar text-white">
+        <div class="text-white">
+            <span class="works-header">03</span>
+            <span class="works-header">WORKS TITLE</span>
+            <span class="works-header">2025</span>
+        </div>
+        <div class="text-white">
+            <a href="">
+                <span class="works-header">+ More Info</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Carousel Section -->
+    <div class="main-carousel" data-flickity='{
+    "wrapAround": true,
+    "autoPlay": false,
+    "pageDots": false,
+    "prevNextButtons": false,
+    "freeScroll": true,
+    "contain": true
+  }'>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+1" alt="Image 1">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+2" alt="Image 2">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+3" alt="Image 3">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+4" alt="Image 4">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+5" alt="Image 5">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+6" alt="Image 6">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+7" alt="Image 7">
+        </div>
+        <div class="carousel-cell">
+            <img src="https://via.placeholder.com/300x450?text=Image+8" alt="Image 8">
+        </div>
+    </div>
+    <!-- seventh section -->
 
 
 
@@ -177,6 +330,8 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <!-- Flickity JS -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
