@@ -14,21 +14,21 @@ body {
 
 
 ::-webkit-scrollbar {
-    width: 14px;
+  width: 14px;
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(255, 255, 255);
-    border-radius: px;
+  box-shadow: inset 0 0 5px rgb(255, 255, 255);
+  border-radius: px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(85, 85, 85);
-    border-radius: 2px;
+  background: rgb(85, 85, 85);
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(36, 36, 36);
+  background: rgb(36, 36, 36);
 }
 
 
@@ -95,6 +95,7 @@ body {
 .vertical-nav a:hover {
   background-color: #292929;
 }
+
 @media (max-width: 576px) {
   .vertical-nav {
     width: 90%;
@@ -353,14 +354,13 @@ span {
 
 
 .carousel-cell {
-  width: 300px;
-  height: 450px;
-  margin-right: 20px;
+  width: 650px;
+  height: 500px;
   background: #ddd;
-  border-radius: 10px;
   overflow: hidden;
   position: relative;
   flex-shrink: 0;
+  margin-right: 10px;
 }
 
 .carousel-cell img {
@@ -398,8 +398,183 @@ span {
   width: 500px;
   letter-spacing: 5px;
   font-size: 2rem;
-  color:white;
+  color: white;
 }
+
 a {
-  text-decoration: none;;
+  text-decoration: none;
+  ;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.image-wrapper:hover .overlay-text {
+  opacity: 1;
+}
+
+
+
+
+
+.contact-section {
+  background-color: #333;
+  padding: 100px 320px;
+  text-align: center;
+}
+
+.contact-section h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.contact-section hr {
+  border: none;
+  border-bottom: 2px solid #5ea4ff;
+  width: 200px;
+  margin: 0 auto 30px auto;
+}
+
+.info-box {
+  background-color: #000;
+  color: white;
+  padding: 70px;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: center;
+  min-width: 680px;
+
+}
+
+.info-box p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.custom-btn {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 25px 75px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #777;
+}
+
+
+
+
+
+
+
+.footer-basic {
+  margin-top: 50px;
+  padding:40px 0;
+  background-color:#000000;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+.list-inline-item{
+  color: white;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.list-inline-item2{
+  color: rgb(222, 222, 222);
+  font-size: 20x;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.logoimage{
+  width: 100px;
+  margin-bottom: 10px;
 }
