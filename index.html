@@ -30,6 +30,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
 
 
@@ -87,7 +90,7 @@
             <div class="row align-items-center">
                 <!-- Text Column -->
                 <div class="col-md-6 order-2 order-md-1">
-                    <h2 class="fw-bold mb-3 ms-5">About Me</h2>
+                    <h2 class="fw-bold mb-3 ms-5 about-title">ABOUT ME</h2>
                     <p class="ms-5">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, cupiditate reiciendis
                         perferendis provident expedita, quos exercitationem magnam repellat cum iusto ea, commodi
@@ -323,6 +326,8 @@
     </div>
     <!-- sixth section -->
          <!-- seventh section -->
+<!-- https://www.youtube.com/watch?v=-HeadgoqJ7A -- FOR WORKING CONTACT FOR IN A MODAL -->
+
     <div class="container-fluid name-section d-flex justify-content-center align-items-center">
         
   <div class="contact-section">
@@ -333,10 +338,63 @@
       <p><strong>Phone:</strong> (123) 456-7890</p>
     </div>
     <br />
-    <button class="custom-btn">Contact Me</button>
+    <button class="custom-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Me</button>
   </div>
 
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background: #333333;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="background: #333333;">
+                    <div class="contact-form">
+                        <span class="circle one"></span>
+                        <span class="circle two"></span>
+                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST"
+                            onsubmit="handleSubmit(event)">
+                            <h3 class="contact-form-title">CONTACT ME</h3>
+                            <div class="input-container">
+                                <input type="hidden" name="access_key" value="a4982dd9-2784-4021-a951-73d1554bd877">
+                                <input type="text" name="name" class="input">
+                                <label for="">Name</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="email" name="email" class="input">
+                                <label for="">Email</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="tel" name="phone" class="input">
+                                <label for="">Phone</label>
+                            </div>
+                            <div class="input-container textarea">
+                                <textarea name="message" class="input"></textarea>
+                                <label for="">Message</label>
+                            </div>
+                            <input type="submit" value="SEND" class="contact-btn">
+                        </form>
+                    </div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    
     <!-- seventh section -->
 
    
