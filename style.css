@@ -293,7 +293,8 @@ span {
 }
 
 .headshotpic {
-  width: 650px;
+  width: 450px;
+  border: 8px dashed #2e2e2e;
 }
 .about-title{
 font-family: "subway-new-york-std", sans-serif;
